@@ -1,0 +1,28 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+}
+
+@layer components {
+  .container-desktop {
+    @apply max-w-6xl mx-auto px-4;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium shadow-soft;
+  }
+  .btn-primary { @apply bg-brand text-white hover:bg-brand-dark transition; }
+  .badge { @apply inline-flex items-center gap-1 rounded-full bg-brand-light px-3 py-1 text-brand text-sm; }
+  .card { @apply rounded-2xl bg-white shadow-soft p-6; }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set global font */
+body {
+  @apply font-nunito;
+}
