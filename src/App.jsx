@@ -1,11 +1,12 @@
-import { useEffect } from "react";        // <-- add this
+import { useEffect } from "react"; // <-- add this
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
-import "@fontsource/nunito";              // defaults to weight 400
-import "@fontsource/nunito/700.css";      // optional: specific weight
+import "@fontsource/nunito"; // defaults to weight 400
+import "@fontsource/nunito/700.css"; // optional: specific weight
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 export default function App() {
   // Initialize AOS once when the app loads
@@ -25,6 +26,8 @@ export default function App() {
 
       {/* Global Footer */}
       <Footer />
+
+      <ScrollToTop />
     </div>
   );
 }

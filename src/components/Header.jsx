@@ -114,27 +114,36 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        {/* Brand */}
-        <Link to="/" className="flex items-center gap-2 font-bold text-xl">
-          <img src="/logo.png" alt="Dasamonie Logo" className="h-8 w-8 object-contain" />
-          Dasamonie
-        </Link>
+        <div className="flex flex-row items-center gap-6">
+          {/* Brand */}
+          <Link to="/" className="flex items-center gap-2 font-bold text-xl">
+            <img
+              src="/logo.png"
+              alt="Dasamonie Logo"
+              className="h-8 w-8 object-contain"
+            />
+            Dasamonie
+          </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-1">
-          <NavItem to="/products">Products</NavItem>
-          <NavItem to="/services">Services</NavItem>
-          <NavItem to="/pricing">Pricing</NavItem>
-          <NavItem to="/about">About</NavItem>
-          <NavItem to="/contact">Contact</NavItem>
-          <NavItem to="/blog">Blog</NavItem>
+          {/* Desktop nav */}
+          <div className="hidden md:flex items-center gap-1">
+            {/* <NavItem to="/products">Products</NavItem> */}
+            {/* <NavItem to="/services">Services</NavItem> */}
+            {/* <NavItem to="/pricing">Pricing</NavItem> */}
+            <NavItem to="/about">About</NavItem>
+            <NavItem to="/contact">Contact</NavItem>
+            <NavItem to="/blog">Blog</NavItem>
+          </div>
         </div>
 
         {/* Desktop CTA */}
         <Link
           to="/download"
           className="hidden md:inline-flex items-center rounded-[600px] px-6 py-2 font-medium text-white transition"
-          style={{ background: "#031E3C", boxShadow: "0 0 16px 0 rgba(255,255,255,.25) inset" }}
+          style={{
+            background: "#031E3C",
+            boxShadow: "0 0 16px 0 rgba(255,255,255,.25) inset",
+          }}
         >
           Download App
         </Link>
@@ -148,7 +157,12 @@ export default function Header() {
           onClick={() => setOpen(true)}
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
           </svg>
         </button>
       </nav>
@@ -157,8 +171,16 @@ export default function Header() {
       <MobileMenu open={open} onClose={() => setOpen(false)}>
         {/* Top bar */}
         <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3 bg-white">
-          <Link to="/" className="flex items-center gap-2 font-bold text-lg" onClick={() => setOpen(false)}>
-            <img src="/logo.png" alt="Dasamonie Logo" className="h-7 w-7 object-contain" />
+          <Link
+            to="/"
+            className="flex items-center gap-2 font-bold text-lg"
+            onClick={() => setOpen(false)}
+          >
+            <img
+              src="/logo.png"
+              alt="Dasamonie Logo"
+              className="h-7 w-7 object-contain"
+            />
             Dasamonie
           </Link>
           <button
@@ -168,7 +190,12 @@ export default function Header() {
             className="inline-flex h-10 w-10 items-center justify-center rounded-xl hover:bg-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/20"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+              <path
+                d="M6 6l12 12M18 6L6 18"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
             </svg>
           </button>
         </div>
@@ -176,9 +203,9 @@ export default function Header() {
         {/* Scrollable list */}
         <div className="flex-1 overflow-y-auto p-2 bg-white divide-y divide-slate-100">
           {[
-            ["Products", "/products"],
-            ["Services", "/services"],
-            ["Pricing", "/pricing"],
+            // ["Products", "/products"],
+            // ["Services", "/services"],
+            // ["Pricing", "/pricing"],
             ["About", "/about"],
             ["Contact", "/contact"],
             ["Blog", "/blog"],
