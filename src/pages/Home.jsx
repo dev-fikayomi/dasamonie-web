@@ -20,10 +20,11 @@ export default function Home() {
       <TrustBar />
       <EyebrowHeadline />
 
+      {/* start here */}
       <FeatureBlockWithBg
         title="Banking Built for Your Everyday Life"
-        desc="From paying bills to saving for the future, enjoy seamless transfers, secure payments, and insight at your fingertips."
-        bgImage="/FirstPic.png"   // make sure this file is in /public
+        desc="From paying bills to saving for the future, Dasamonie’s banking services make every transaction simple, secure, and right at your fingertips"
+        bgImage="/FirstPic.png" // make sure this file is in /public
       />
 
       <FeatureBlock2
@@ -66,5 +67,3 @@ export default function Home() {
     </div>
   );
 }
-
-

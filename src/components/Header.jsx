@@ -58,14 +58,14 @@ function MobileMenu({ open, onClose, children }) {
         className={[
           "fixed inset-0 md:hidden bg-white",
           // robust viewport height across mobile browsers
-          "h-[100svh] min-h-[100svh] max-h-[100dvh] w-screen",
+          // "h-[100svh] min-h-[100svh] max-h-[100dvh] w-screen",
           "flex flex-col shadow-2xl ring-1 ring-black/10",
           "transition-transform duration-300",
           open ? "translate-y-0" : "translate-y-full",
           "z-[10000001]",
           // safe-area padding for notches
-          "pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]",
-          "overscroll-contain",
+          // "pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]",
+          // "overscroll-contain",
         ].join(" ")}
       >
         {children}

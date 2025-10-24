@@ -11,11 +11,11 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 export default function App() {
   // Initialize AOS once when the app loads
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col font-nunito">
+    <div className="min-h-screen flex flex-col font-nunito max-w-[100rem] mx-auto">
       {/* Global Header */}
       <Header />
 

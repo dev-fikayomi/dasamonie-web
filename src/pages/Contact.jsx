@@ -2,11 +2,10 @@ import React from "react";
 import FeatureBlock6 from "../components/FeatureBlock6";
 
 export default function Contact() {
-  function onSubmit(e) {
+  const onSubmit = (e) => {
     e.preventDefault();
-    // TODO: wire to your API
     console.log("Contact form submitted");
-  }
+  };
 
   return (
     <div className="w-full">
@@ -34,7 +33,8 @@ export default function Contact() {
                 Send us a message
               </h3>
               <p className="mt-1 text-sm text-slate-600">
-                Have a specific question or feedback? Fill out the form below, and we’ll get back to you promptly.
+                Have a specific question or feedback? Fill out the form below,
+                and we’ll get back to you promptly.
               </p>
             </div>
 
@@ -123,20 +123,23 @@ export default function Contact() {
                transition-transform group-hover:translate-x-0.5"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                    <path d="M5 12h12M13 6l6 6-6 6"
-                      stroke="currentColor" strokeWidth="2"
-                      strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M5 12h12M13 6l6 6-6 6"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </span>
               </button>
-
             </div>
           </form>
         </div>
       </section>
 
       {/* === Full-width info strip (dark) === */}
-      <section >
+      <section>
         <div className="  bg-[#05203E] text-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 py-8 md:py-10">
             <div className="grid grid-cols-1 gap-6 text-center md:grid-cols-3 md:text-left">
@@ -161,12 +164,11 @@ export default function Contact() {
           </div>
         </div>
       </section>
-     <FeatureBlock6
-            title="Your Next Transaction Could Be This Easy!"
-            desc="With speed, security, and simplicity, you’re one tap away from better money moves."
-            img="/assets/feature-fx.png"
-          />
-      
+      <FeatureBlock6
+        title="Your Next Transaction Could Be This Easy!"
+        desc="With speed, security, and simplicity, you’re one tap away from better money moves."
+        img="/assets/feature-fx.png"
+      />
     </div>
   );
 }

@@ -26,7 +26,10 @@ export default function Footer() {
           {/* Brand + blurb */}
           <div>
             <div className="mb-4 flex items-center gap-3 text-lg font-bold">
-              <Link to="/" className="flex items-center gap-2 text-xl font-bold">
+              <Link
+                to="/"
+                className="flex items-center gap-2 text-xl font-bold"
+              >
                 <img
                   src="/logo.png"
                   alt="Dasamonie Logo"
@@ -42,10 +45,18 @@ export default function Footer() {
             </p>
 
             <div className="mt-5 flex items-center gap-4 text-white/80">
-              <a href="#" aria-label="X">X</a>
-              <a href="#" aria-label="YouTube">YouTube</a>
-              <a href="#" aria-label="LinkedIn">LinkedIn</a>
-              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="X">
+                X
+              </a>
+              <a href="#" aria-label="YouTube">
+                YouTube
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                LinkedIn
+              </a>
+              <a href="#" aria-label="Facebook">
+                Facebook
+              </a>
             </div>
           </div>
 
@@ -53,11 +64,21 @@ export default function Footer() {
           <div>
             <p className="mb-3 font-semibold">Products</p>
             <ul className="space-y-2 text-white/90">
-              <li><Link to="/products">Loan services</Link></li>
-              <li><Link to="/products">VTU services</Link></li>
-              <li><Link to="/products">Currency exchange</Link></li>
-              <li><Link to="/products">Virtual cards</Link></li>
-              <li><Link to="/products">POS Services</Link></li>
+              <li>
+                <Link to="/products">Loan services</Link>
+              </li>
+              <li>
+                <Link to="/products">VTU services</Link>
+              </li>
+              <li>
+                <Link to="/products">Currency exchange</Link>
+              </li>
+              <li>
+                <Link to="/products">Virtual cards</Link>
+              </li>
+              <li>
+                <Link to="/products">POS Services</Link>
+              </li>
             </ul>
           </div>
 
@@ -65,10 +86,20 @@ export default function Footer() {
           <div>
             <p className="mb-3 font-semibold">Company</p>
             <ul className="space-y-2 text-white/90">
-              <li><Link to="/about">About us</Link></li>
-              <li><a href="#" onClick={(e)=>e.preventDefault()}>Help center</a></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/contact">Contact us</Link></li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  Help center
+                </a>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact us</Link>
+              </li>
             </ul>
           </div>
 
@@ -76,9 +107,21 @@ export default function Footer() {
           <div>
             <p className="mb-3 font-semibold">Legal</p>
             <ul className="space-y-2 text-white/90">
-              <li><a href="#" onClick={(e)=>e.preventDefault()}>Privacy policy</a></li>
-              <li><a href="#" onClick={(e)=>e.preventDefault()}>Acceptable use policy</a></li>
-              <li><a href="#" onClick={(e)=>e.preventDefault()}>Terms of service</a></li>
+              <li>
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  Acceptable use policy
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick={(e) => e.preventDefault()}>
+                  Terms of service
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -87,8 +130,11 @@ export default function Footer() {
 
         <div className="flex flex-col items-start gap-2 py-4 text-xs md:flex-row md:items-center md:justify-between">
           <span>© {year} Dasamonie. All rights reserved.</span>
-          <a href="mailto:Contact@dasamonie.com" className="hover:underline break-all">
-            Contact@dasamonie.com
+          <a
+            href="mailto:contact@dasamonie.com"
+            className="hover:underline break-all"
+          >
+            contact@dasamonie.com
           </a>
         </div>
       </div>
